@@ -10,6 +10,10 @@ Collect all documents, links, tutorial about event-driven and testing for event-
 - Event Sourcing.
 - Command Query Responsibility Segregation.
 
+## Architecture Style Event Driven Microservice - Microsoft
+[More Information](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
+
+![image](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/event-driven.svg)
 
 # References:
 - https://ifyouseewendy.gitbooks.io/random-notes/content/event-driven-architecture-by-martin-fowler.html
