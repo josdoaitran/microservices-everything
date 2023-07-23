@@ -1,10 +1,11 @@
-# event driven everything
-Collect all documents, links, tutorial about event-driven and testing for event-driven
+# Event Driven everything
+In this space, we collect all documents, links, tutorial about event-driven and testing for event-driven architecture.
+
 # What does means "Event-Driven" ?
 
 [More information from Martinnfowler](https://martinfowler.com/articles/201701-event-driven.html)
 
-## Example Syste Artchitect with Event-Driven
+## Example Syste Artchitecture with Event-Driven
 - Event Notification.
 - Event-carried State Transfer
 - Event Sourcing.
