@@ -24,11 +24,15 @@ Example:
 ## Event-Driven with Kafka
 - Apache Kafka: https://kafka.apache.org/
 Besides that, if we use AWS native service, we can take advantage of AWS MSK servivce (Serverless), instead of using Kafka server. https://aws.amazon.com/msk/
-### Kafka - Java Sprintboot
+### Kafka - Java Springboot
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20220214105957/SpringBootProducerConsumer.jpg)
 You can refer to this repository, we initialized the example microservices with kafka:
 https://github.com/josdoaitran/full-example-kafka-java-springboot
 - Reference: https://www.geeksforgeeks.org/spring-boot-kafka-consumer-example/
+
+## Event-Driven with AWS Service:
+- Event Routers on AWS Service: Routing services an be implemented with SQS, SNS, MSK, Step Functions and EventBridge.
+- References: https://collin-smith.medium.com/event-driven-architecture-with-the-saga-pattern-approach-in-aws-688e090dba2c
 
 ## Architecture Style Event Driven Microservice - Microsoft
 [More Information](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
