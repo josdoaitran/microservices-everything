@@ -14,9 +14,14 @@ Then, each microservice will have these properties:
 ## Monolithic and Microservice Architecture
 As below image, we have the simple web application that built in  Monolithic Architecture:
 
-![Example-Monolethic](https://microservices.io/i/DecomposingApplications.011.jpg)
+![Example-Monolethic](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2021/07/14/Figure-1.-Monolithic-on-premises-ecommerce-infrastructure-with-different-tiers.jpg)
 
 The example microservice architecture system:
+![Example-Monlithic](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2021/07/14/Figure-2.-Microservices-based-order-submission-workflow.jpg)
+
+- Difference Monolithic vs Microservice Architecture:
+
+![Monolithic-vs-microrservice](https://www.openlegacy.com/hs-fs/hubfs/Picture1.webp?width=889&height=478&name=Picture1.webp)
 
 The principle to migrate a system from monolithic to microservice architecture:
 refer to: https://microservices.io/post/refactoring/2020/07/28/six-principles-for-refactoring-to-microservices.html
@@ -32,8 +37,15 @@ Base on the communicaiton protocol among components and microservices, we will h
 Read more [Here](https://github.com/josdoaitran/microservices-everything/blob/main/sync-and-async.md)
 
 
+# Serverless:
+https://www.infoq.com/news/2016/08/serverless-autodesk/
+
+
 # References:
 - Microservice IO: https://microservices.io/index.html
 - From Monolithic to Microservice:
 https://microservices.io/patterns/monolithic.html
 - https://learning.oreilly.com/library/view/microservices-patterns/9781617294549/
+- https://medium.com/javanlabs/micro-services-versus-monolithic-architecture-what-are-they-e17ddc8d3910
+- Communication: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
+- Microservice with AWS: https://aws.amazon.com/blogs/architecture/architecting-a-highly-available-serverless-microservices-based-ecommerce-site/

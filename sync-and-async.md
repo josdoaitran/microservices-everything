@@ -16,3 +16,4 @@ https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscrib
 ## References:
 - https://info.nl/en/conversation/the-importance-of-loose-coupling-in-microservice-architecture/
 - https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
+- Async: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/asynchronous-messaging-and-event-passing.html
