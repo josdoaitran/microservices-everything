@@ -34,8 +34,11 @@ Base on the communicaiton protocol among components and microservices, we will h
 - Tight coupling
 - Loose coupling.
 
-Read more [Here](https://github.com/josdoaitran/microservices-everything/blob/main/sync-and-async.md)
+Read more [Here](./sync-and-async.md)
 
+## Microservice Testing
+In this session, we will collect all points in Testing to cover the quality of system in Microservice Architecture.
+Reading more [here](./microservice-testing.md)
 
 # Serverless:
 https://www.infoq.com/news/2016/08/serverless-autodesk/
