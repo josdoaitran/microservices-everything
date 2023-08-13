@@ -16,6 +16,7 @@ Microservice requires QA and Development team change the mindset and testing str
 
 - All Testing Activities depends on System Deployment status if System is working on Monolithic. It's too hard to perform testing earlier.
 
+![Alt text](./images/tranditional-testing.png)
 
 ## The Advantages of Microservice about Testing, and the challenges for end-to-end testing:
 ### The Advantages of Microservice Architecture:
