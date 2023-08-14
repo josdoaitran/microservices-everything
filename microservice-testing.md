@@ -36,6 +36,10 @@ What we depends on third-party dependiencies:
 + Integration status: The testing environment from the third-party be ready and available.
 + Data testing: In some actual scenario about business rules, we have to cover testing scenarios, we need to have the proper testing data, and they are controlled by our third-party. When we do end-to-end testing, we wil have supports from third-party to have proper testing data in correct expected scenarios in business rules.
 
+- The cost of test environments is not Cheap, then The testing environments are shared amoung developmen-team.
+
+![Challenges](./images/challenges-microservice-e2e-testing.png)
+
 # Testing Strategy for Microservice Testing:
 
 Based on TDD (Test-Driven Development), we should do testing more ranges and levels: It can include: test classes, methods in isolated views of each microservices and components, and the component view if our microservices works with other components or microservices (we can consider them as dependencies).
