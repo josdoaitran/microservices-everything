@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="Sh0y8UVjAB0p6koBv5Zd" name="tranditional-testing">
-        <mxGraphModel dx="1044" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="887" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10" y="10" width="790" height="350" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="4" edge="1">
@@ -19,26 +19,150 @@
                 <mxCell id="4" value="Deploy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
                     <mxGeometry x="370" y="80" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="10">
+                <mxCell id="11" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Test" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="530" y="80" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="3">
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" parent="1" source="8" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Design" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="8" value="Design" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="80" width="90" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Release" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="10" value="Release" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="690" y="80" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Tranditional Testing&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="12" value="Tranditional Testing&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="120" y="10" width="280" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="&lt;h1&gt;Testing&lt;/h1&gt;&lt;p&gt;- Focus on End-to-End Testing only.&lt;/p&gt;&lt;p&gt;- End-to-End testing as Quality Gateway.&lt;/p&gt;&lt;p&gt;- Test less, no lower layers.&lt;/p&gt;&lt;p&gt;- Depend on Integrated and Deployment status&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                <mxCell id="18" value="&lt;h1&gt;Testing&lt;/h1&gt;&lt;p&gt;- Focus on End-to-End Testing only.&lt;/p&gt;&lt;p&gt;- End-to-End testing as Quality Gateway.&lt;/p&gt;&lt;p&gt;- Test less, no lower layers.&lt;/p&gt;&lt;p&gt;- Depend on Integrated and Deployment status&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="470" y="200" width="280" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="zItPIdPZBY3RJTs7pHmb" name="1-microservice-view">
+        <mxGraphModel dx="2338" dy="1993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-35" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+                    <mxGeometry x="-170" y="-280" width="1290" height="1000" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="-120" width="730" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-2" value="microservice&amp;nbsp;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="300" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-4" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="40" y="240" as="sourcePoint"/>
+                        <mxPoint x="260" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-5" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="230" width="108.39" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-6" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="60" width="108.38" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-7" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="280" as="sourcePoint"/>
+                        <mxPoint x="40" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-8" value="Depend on microservice A" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="130" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-9" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="218.54" width="102.9" height="66.46" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-10" value="Depend on microservice B" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="290" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-12" value="" style="endArrow=classic;startArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="nQtQQHxR7MG-OjgFrSxD-5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="310" y="370" as="sourcePoint"/>
+                        <mxPoint x="550" y="90" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="255"/>
+                            <mxPoint x="440" y="90"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-15" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="270" as="sourcePoint"/>
+                        <mxPoint x="560" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-16" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="410" width="102.9" height="66.46" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-17" value="Depend on microservice C" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="565" y="477.46000000000004" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-18" value="Team 2 iss working on Dependecy C and Do Testing&amp;nbsp;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;dashed=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="590" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-20" value="" style="shape=flexArrow;endArrow=classic;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="nQtQQHxR7MG-OjgFrSxD-17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="598" y="620" as="sourcePoint"/>
+                        <mxPoint x="610" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-21" value="Your team&amp;nbsp; iss working on your microservice" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;dashed=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-30" y="230" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-22" value="" style="endArrow=classic;startArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="nQtQQHxR7MG-OjgFrSxD-5" target="nQtQQHxR7MG-OjgFrSxD-16">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="410" y="520" as="sourcePoint"/>
+                        <mxPoint x="460" y="470" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="280"/>
+                            <mxPoint x="440" y="443"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-23" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Globe_Error.svg;dashed=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="218.54" width="56.00000000000001" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-25" value="Our testing environment will be unstable if any component or third-party is down-stream =&amp;gt; testing unreliable" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;dashed=1;fillColor=#f8cecc;align=left;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="214.54" width="270" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-26" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" vertex="1" parent="1">
+                    <mxGeometry x="560.81" y="-100" width="108.38" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-27" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="940" y="-95" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-28" value="microservice D" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="662.9" y="-30" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-29" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1" source="nQtQQHxR7MG-OjgFrSxD-6" target="nQtQQHxR7MG-OjgFrSxD-26">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="30" as="sourcePoint"/>
+                        <mxPoint x="580" y="-20" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-30" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nQtQQHxR7MG-OjgFrSxD-26" target="nQtQQHxR7MG-OjgFrSxD-27">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="30" as="sourcePoint"/>
+                        <mxPoint x="580" y="-20" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-31" value="3rd Party" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="-30" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-32" value="In Integrated level, The dependcy is very complex with many dependecies." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;dashed=1;fillColor=#fff2cc;align=left;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="-190" width="285" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="nQtQQHxR7MG-OjgFrSxD-33" value="Test enviroment is shared." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;dashed=1;fillColor=#e1d5e7;align=left;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="530" width="180" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
