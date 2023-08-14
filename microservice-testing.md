@@ -30,6 +30,11 @@ Microservice requires QA and Development team change the mindset and testing str
 
 *Suggestions*: We decouple releases, so we can deploy the isolated service independiently, and then Independent Testing for each components will be covered easiler and be monitored easier. The drawback of this way is that requiring the systemm architecture should be designed to support isolated deployed and be testable as well. 
 
+- The bigest challenges: *Our testing will be depent on many dependiencies, especially if our system works with our third-party side.*
+What we depends on third-party dependiencies:
++ Deployment status: You wont' be able to do End-to-End testing once our partners/third-party sides are ready.
++ Integration status: The testing environment from the third-party be ready and available.
++ Data testing: In some actual scenario about business rules, we have to cover testing scenarios, we need to have the proper testing data, and they are controlled by our third-party. When we do end-to-end testing, we wil have supports from third-party to have proper testing data in correct expected scenarios in business rules.
 
 # Testing Strategy for Microservice Testing:
 
