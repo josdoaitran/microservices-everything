@@ -41,10 +41,24 @@ What we depends on third-party dependiencies:
 ![Challenges](./images/challenges-microservice-e2e-testing.png)
 
 # Testing Strategy for Microservice Testing:
+After understanding of the difficulties and challenges about testing. We need to classify our testing in microservices into some testing levels as below:
+
++ Unit test
++ Integration Test
++ End to End Test
++ UI testing
+
+Test Pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+
+Testing Google at Scale: https://abseil.io/resources/swe-book/html/ch11.html
+
+![TestPyramid](./images/test-pyramid.png)
 
 Based on TDD (Test-Driven Development), we should do testing more ranges and levels: It can include: test classes, methods in isolated views of each microservices and components, and the component view if our microservices works with other components or microservices (we can consider them as dependencies).
 
 # Contract testing in Microservice testing
+Contract Test: 
+
 Tools:
 - Pact.io
 - 
