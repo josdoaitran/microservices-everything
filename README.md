@@ -14,7 +14,7 @@ Then, each microservice will have these properties:
 ## Monolith and Microservice Architecture
 As below image, we have the simple web application that built in  Monolith Architecture:
 
-![Example-Monolethic](https://www.researchgate.net/publication/343805251/figure/fig4/AS:927177394626560@1598067725117/The-monolithic-application-software-architecture-implemented-for-stress-testing.ppm)
+![Monolith](./images/monolithic.png)
 
 The big problem in Monolith architecture is scaling the system in Monolith, when multi-team will work in the same code base.
 
