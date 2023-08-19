@@ -45,6 +45,7 @@ After understanding of the difficulties and challenges about testing. We need to
 
 + Unit test
 + Integration Test
++ Component Téting
 + End to End Test
 + UI testing
 
@@ -55,6 +56,11 @@ Testing Google at Scale: https://abseil.io/resources/swe-book/html/ch11.html
 ![TestPyramid](./images/test-pyramid.png)
 
 Based on TDD (Test-Driven Development), we should do testing more ranges and levels: It can include: test classes, methods in isolated views of each microservices and components, and the component view if our microservices works with other components or microservices (we can consider them as dependencies).
+
+## Component Testing for each microservice
+After understanding of the difficulties and challenges to do E2E testing, we tend to focus on performing the testing with lower layers, especially Component Testing.
+
+In order to perform Component Testing for each Microservice as System-Under-Test, we apply Mocking library to replace the our micoservice's dependiencies. We can completely control our testing-data with mocking library (Virtual Supports), instead of depending on our third-party service.
 
 # Contract testing in Microservice testing
 Contract Test: 
