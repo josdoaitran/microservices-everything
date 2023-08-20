@@ -61,12 +61,32 @@ Based on TDD (Test-Driven Development), we should do testing more ranges and lev
 After understanding of the difficulties and challenges to do E2E testing, we tend to focus on performing the testing with lower layers, especially Component Testing.
 In below image, we visualize the example of component view of serveral microservices with 2 famous communications types: Asnc and Sync.
 
-![Component-View](./images/component-view.png.png)
+![Component-View](./images/component-view.png)
 
 In order to perform Component Testing for each Microservice as System-Under-Test, we apply Mocking library to replace the our micoservice's dependiencies. We can completely control our testing-data with mocking library (Virtual Supports), instead of depending on our third-party service.
 
+![Component-Testing](./images/component-testing.png)
+*Component Testing Steps:*
+
++ List out the dependiencies of our System-Under-Test.
++ Provise and arrange the virtual components or mocking components to replace our dependiencies.
++ We can perform the testing actions to our System-Under-Test and get the returns from our system.
++ We can assert and verify the results from our System-Under-Test.
++ [Optional] We can implement test script to clean up data on our System-Under-Test and mocking components to make sure our testing execuable again.
+
+Note: The above approach won't work to execute manual testing and parallel execution. We tend to run this way in isolated testing purpose.
+
+However, with supports from virtual components, we can control:
++ Testing Data on virutal / mocking component instead of depending on third-party.
++ Easy to clean-up to make testing flexible and execuable again.
+Example: Using a persistent data store [Refer to Chapter 1 - Mountain Bank testing - Book]
+![persistent data store](./images/persistent_data_store_component_testing.png)
+
+Example: Using Record - Playback with mocking service to record testing from real dependiencies
+
+
 # Contract testing in Microservice testing
-Contract Test: 
+Contract Test: is a software testing methodology that tests the interactions between different microservices or software components based on the contracts between them. In contract testing, each service or component is given a contract, which defines how to work with the service and which responses to accept. 
 
 Tools:
 - Pact.io
