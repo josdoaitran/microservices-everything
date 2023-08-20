@@ -86,7 +86,7 @@ Example: Using Record - Playback with mocking service to record testing from rea
 
 
 # Contract testing in Microservice testing
-Contract Test: 
+Contract Test: is a software testing methodology that tests the interactions between different microservices or software components based on the contracts between them. In contract testing, each service or component is given a contract, which defines how to work with the service and which responses to accept. 
 
 Tools:
 - Pact.io
