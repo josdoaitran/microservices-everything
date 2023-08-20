@@ -59,6 +59,9 @@ Based on TDD (Test-Driven Development), we should do testing more ranges and lev
 
 ## Component Testing for each microservice
 After understanding of the difficulties and challenges to do E2E testing, we tend to focus on performing the testing with lower layers, especially Component Testing.
+In below image, we visualize the example of component view of serveral microservices with 2 famous communications types: Asnc and Sync.
+
+![Component-View](./images/component-view.png.png)
 
 In order to perform Component Testing for each Microservice as System-Under-Test, we apply Mocking library to replace the our micoservice's dependiencies. We can completely control our testing-data with mocking library (Virtual Supports), instead of depending on our third-party service.
 
