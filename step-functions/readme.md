@@ -2,6 +2,7 @@
 https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html
 
 
+Orchestration vs Choreography
 
 # Testing for Step Function
 We expect to run and double check the posible cases to make sure our application work properly with AWS Step Function and State.
