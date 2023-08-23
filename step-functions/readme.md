@@ -16,3 +16,4 @@ Follow to [Microservice Testing](./../microservice-testing.md), we follow the lo
 
 # References:
 - AWS Step Function: https://medium.com/theburningmonk-com/testing-strategies-for-step-functions-19cd087eae19
+- UNIT TEST your Step Functions with the Mocked Service Integrations: https://www.youtube.com/watch?v=P3hEqxKxZe8
