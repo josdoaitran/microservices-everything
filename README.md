@@ -42,8 +42,25 @@ Read more [Here](./sync-and-async.md)
 In this session, we will collect all points in Testing to cover the quality of system in Microservice Architecture.
 Reading more [here](./microservice-testing.md)
 
-# Serverless:
-https://www.infoq.com/news/2016/08/serverless-autodesk/
+# Serverless Architecture
+In order to build and deploy the software, we tend to use the serverless architecture, it meants that we don't need to manage the infrastructure. We will use the cloud infrastructure services to build and manage our application.
+
+The development team can focus on the product design instead of managing and operating the servers and keep the infrastructure availabilities.
+
+- [AWS Services](https://aws.amazon.com/serverless/): AWS API Gateway, Lambda function, AWS ECS, AWS EKS, Step Function, S3, ..
+- [Azure Services](https://azure.microsoft.com/en-us/solutions/serverless):
+- [Google Cloud](https://cloud.google.com/): Azure Function, Kubernetes Service, Block Blob, ...
+![](https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200/https://adex.ltd/wp-content/uploads/2023/02/Microsoft-Azure-VS.-AWS-Vs.-Google-Cloud.png)
+Image refered to: https://adex.ltd/microsoft-azure-vs-aws-vs-google-cloud/
+## Serverless testing:
+Difficulties and challenges:
+- Conplex application system.
+- More testing layers and paradigm approaches
+
+
+## References:
+- https://aws.amazon.com/lambda/serverless-architectures-learn-more
+- https://www.infoq.com/news/2016/08/serverless-autodesk/
 
 
 # References:
