@@ -110,7 +110,7 @@ Mocks:
 
 # AWS Stack, Simulator with local service, not mock
 - Simulate the real AWS Services.
-- NOT: Feature lags / missing
+- NOT: Feature lags / missing (There aren't full-services simulators)
 - NOT: Doesn't simulate IAM
 - NOT:False nagatives (Simulate problems)
 - NOT: Brigttle (hard to fix)
@@ -118,6 +118,8 @@ Mocks:
 
 # Now not Test Pyramid, now we are in HoneyComb Microservice testing strategy
 We are going ton increase more tests in ealier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
+
+References: https://engineering.atspotify.com/2018/01/testing-of-microservices/
 
 # References:
 - Martinfowler Microservice Testing: https://martinfowler.com/articles/microservice-testing
