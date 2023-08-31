@@ -57,6 +57,7 @@ Testing Google at Scale: https://abseil.io/resources/swe-book/html/ch11.html
 
 Based on TDD (Test-Driven Development), we should do testing more ranges and levels: It can include: test classes, methods in isolated views of each microservices and components, and the component view if our microservices works with other components or microservices (we can consider them as dependencies).
 
+
 ## Component Testing for each microservice
 After understanding of the difficulties and challenges to do E2E testing, we tend to focus on performing the testing with lower layers, especially Component Testing.
 In below image, we visualize the example of component view of serveral microservices with 2 famous communications types: Asnc and Sync.
@@ -97,11 +98,26 @@ Tools:
 https://martinfowler.com/articles/mocksArentStubs.html
 - In Microservices, probably each microservice has many dependencies (dependency injection). We will take advantaged of many open-source library to create the faking dependiencies earlier and doing testing activities earlier.
 
+Mocks:
+- enable to test business logic isolation and without deployment
+- doesn't cover integrated points
+
 # Mocking tools and artifacts:
 - Wiremock: https://wiremock.org/ 
 - Mockoon: https://mockoon.com/
 - Mockito and Java stack: https://site.mockito.org/
 - Easy mock and Java stack: https://easymock.org/
+
+# AWS Stack, Simulator with local service, not mock
+- Simulate the real AWS Services.
+- NOT: Feature lags / missing
+- NOT: Doesn't simulate IAM
+- NOT:False nagatives (Simulate problems)
+- NOT: Brigttle (hard to fix)
+
+
+# Now not Test Pyramid, now we are in HoneyComb Microservice testing strategy
+We are going ton increase more tests in ealier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
 
 # References:
 - Martinfowler Microservice Testing: https://martinfowler.com/articles/microservice-testing
