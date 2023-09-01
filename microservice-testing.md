@@ -111,7 +111,7 @@ Mocks:
 - enable to test business logic isolation and without deployment
 - doesn't cover integrated points
 
-# Mocking tools and artifacts:
+# Mocking tools and artifacts
 - Wiremock: https://wiremock.org/ 
 - Mockoon: https://mockoon.com/
 - Mockito and Java stack: https://site.mockito.org/
