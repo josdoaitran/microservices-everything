@@ -111,7 +111,7 @@ Mocks:
 - enable to test business logic isolation and without deployment
 - doesn't cover integrated points
 
-# Mocking tools and artifacts:
+# Mocking tools and artifacts
 - Wiremock: https://wiremock.org/ 
 - Mockoon: https://mockoon.com/
 - Mockito and Java stack: https://site.mockito.org/
@@ -127,6 +127,8 @@ Mocks:
 
 # Now not Test Pyramid, now we are in HoneyComb Microservice testing strategy
 We are going ton increase more tests in ealier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
+
+![Pyramid-vs-HoneyComb](./images/pyramid-vs-honeycomb.png)
 
 References: https://engineering.atspotify.com/2018/01/testing-of-microservices/
 
