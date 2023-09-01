@@ -85,13 +85,22 @@ Example: Using a persistent data store [Refer to Chapter 1 - Mountain Bank testi
 
 Example: Using Record - Playback with mocking service to record testing from real dependiencies
 
+# Write tests. Not too many. Mostly integration. "Kent C. Dodds"
+Refer to: https://kentcdodds.com/blog/write-tests
+We tend to write test and focus more on Integration test to detect and prevent issues soon.
+It can be the main factors to build up the test strategy with Honycob testing from Pyramid testing.
 
 # Contract testing in Microservice testing
 Contract Test: is a software testing methodology that tests the interactions between different microservices or software components based on the contracts between them. In contract testing, each service or component is given a contract, which defines how to work with the service and which responses to accept. 
 
 Tools:
 - Pact.io
-- 
+- Spring Cloud Contract
+- Karate DSL
+
+## Consumer-Driven Contract Testing in Microsoft: 
+https://microsoft.github.io/code-with-engineering-playbook/automated-testing/cdc-testing/
+
 
 # Mocks and why we should use Mock ?
 - Note: Mock is different to Stuffs.
