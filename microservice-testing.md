@@ -40,6 +40,18 @@ What we depends on third-party dependiencies:
 
 ![Challenges](./images/challenges-microservice-e2e-testing.png)
 
+## Challenging to trigger the e2e testing and debug issues in e2e testing
+E2E testing and testing in production has the same properties like that:
++ We need to control our testing environment before we start testing.
++ We have to spend our efforts to prepare the preconditions of each our test scenario.
+    - monitoring and obserbilities of our software architectures.
+    - debuging in failed case.
+=> once the issue occurs, we have to trace and debug the root cause of issues in non-prod environment with e2e testing. Especially, it can be harder if the issue occurs in Production, or we trying to execute the test scenario in live prod environment.
+
+Suggested Actions:
+- Write sturected logs , meanningful log [Using JSON]
+- Setup alert, notificaiton to aware the issues as soon as posible.
+
 # Testing Strategy for Microservice Testing:
 After understanding of the difficulties and challenges about testing. We need to classify our testing in microservices into some testing levels as below:
 
