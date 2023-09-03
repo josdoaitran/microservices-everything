@@ -78,6 +78,16 @@ Example:
 - SQS
 - Kinesis
 
+## Serverless - AWS Service with isolated environmemt
+We are working in mutitlple testing environment with different aws accounts. It helps us devide our testing to more test levels, easier to control the quality of products. We can consider the below model, all these environment are just standalone CloudFormation (AWS) stacks and can be easier to deployed, managed and removed (cleaned up the lower environment) if we needed.
+
+![Muti-account-Multi-environment](./images/muti-account-multi-environment.png)
+
+## Temporary test environment with https://school.theburningmonk.com/: 
+This ideas is manipulated as the testing demands: setup: run test: and teardown, to keep our testing rerunable and executable continuously.
+In order to run e2e testing, we have to seed the testing data and make sure our testing environment be ready before we run the test.
+
+
 
 ## References:
 - https://aws.amazon.com/lambda/serverless-architectures-learn-more
