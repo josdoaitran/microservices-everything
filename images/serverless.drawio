@@ -1,34 +1,34 @@
 <mxfile host="65bd71144e">
-    <diagram id="XqqTuo4MlpARSyOCVeVE" name="Page-1">
-        <mxGraphModel dx="605" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <diagram id="XqqTuo4MlpARSyOCVeVE" name="test-local-and-test-in-cloud">
+        <mxGraphModel dx="1088" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CC0000;fontColor=#CC0000;" vertex="1" parent="1">
+                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CC0000;fontColor=#CC0000;" parent="1" vertex="1">
                     <mxGeometry x="20" y="40" width="600" height="480" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="Test Locally" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="2" value="Test Locally" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="40" y="60" width="240" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Test on Cloud Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                <mxCell id="3" value="Test on Cloud Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="360" y="60" width="240" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font color=&quot;#009900&quot;&gt;Simulate Cloud Service on Local&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="4" value="&lt;font color=&quot;#009900&quot;&gt;Simulate Cloud Service on Local&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="40" y="160" width="240" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="&lt;font color=&quot;#cc0000&quot;&gt;Deployed all Resources, Components to Cloud Service&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="5" value="&lt;font color=&quot;#cc0000&quot;&gt;Deployed all Resources, Components to Cloud Service&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="360" y="160" width="240" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="&lt;font color=&quot;#009900&quot;&gt;Using mock and virtual dependiencies&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="6" value="&lt;font color=&quot;#009900&quot;&gt;Using mock and virtual dependiencies&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="40" y="280" width="240" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="&lt;font color=&quot;#cc0000&quot;&gt;Remote to do testing&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="7" value="&lt;font color=&quot;#cc0000&quot;&gt;Remote to do testing&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="360" y="280" width="240" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="&lt;font color=&quot;#009900&quot;&gt;Faster, however Lower Confident [Component Testing]&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="8" value="&lt;font color=&quot;#009900&quot;&gt;Faster, however Lower Confident [Component Testing]&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="40" y="400" width="240" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="&lt;font color=&quot;#cc0000&quot;&gt;Slower, more dificult to test but higher confidents&lt;br&gt;higher levels of testing [E2E]&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="9" value="&lt;font color=&quot;#cc0000&quot;&gt;Slower, more dificult to test but higher confidents&lt;br&gt;higher levels of testing [E2E]&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="360" y="401" width="240" height="90" as="geometry"/>
                 </mxCell>
             </root>
