@@ -10,7 +10,7 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.ht
 ## API Gateway APIs testing strategy:
 We target to make sure our API will work properly after integrated with API Gateway APIs.
 Example patterns:
-![API Gateway apis - lambda](./api-gateway-lambda.png)
+![API Gateway apis - lambda](../../images/aws/api-gateway-lambda.png)
 
 ## References:
 - https://www.youtube.com/watch?v=_PAA3FmguyI
