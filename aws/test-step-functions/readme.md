@@ -12,6 +12,7 @@ Basically, we should consider to cover 2 levels or types of testing:
 https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local.html
 
 https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local-test-sm-exec.html
+https://github.com/codetheweb/serverless-step-functions-local
 
 ## Step Function and Component Testing:
 Follow to [Microservice Testing](./../microservice-testing.md), we follow the low levels of testing to isolate our step-function component to do testing with virtual components and dependiencies.
@@ -22,3 +23,5 @@ Follow to [Microservice Testing](./../microservice-testing.md), we follow the lo
 # References:
 - AWS Step Function: https://medium.com/theburningmonk-com/testing-strategies-for-step-functions-19cd087eae19
 - UNIT TEST your Step Functions with the Mocked Service Integrations: https://www.youtube.com/watch?v=P3hEqxKxZe8
+- https://github.com/serverless-operations/serverless-step-functions
+- https://github.com/codetheweb/serverless-step-functions-local
