@@ -8,6 +8,11 @@ Basically, we should consider to cover 2 levels or types of testing:
 - Component testing with isolated view, run locally.
 - E2E testing with state machine and real-integrated environment.
 
+## Step Function in Local mode and Mocked Service Integration
+https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local.html
+
+https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local-test-sm-exec.html
+
 ## Step Function and Component Testing:
 Follow to [Microservice Testing](./../microservice-testing.md), we follow the low levels of testing to isolate our step-function component to do testing with virtual components and dependiencies.
 
