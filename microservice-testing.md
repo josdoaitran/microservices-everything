@@ -149,3 +149,5 @@ References: https://engineering.atspotify.com/2018/01/testing-of-microservices/
 - PactIo: https://pact.io/
 - Mountain Bank Testing: http://www.mbtest.org/
 - Source code - Mountain Bank: https://github.com/bbyars/mountebank-in-action
+- https://www.infoq.com/articles/twelve-testing-techniques-microservices-intro/
+- https://www.infoq.com/articles/twelve-testing-techniques-microservices-tradeoffs/
