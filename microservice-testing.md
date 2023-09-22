@@ -145,6 +145,7 @@ We are going ton increase more tests in ealier levels with component and integra
 References: https://engineering.atspotify.com/2018/01/testing-of-microservices/
 
 # References:
+- https://www.infoq.com/news/2020/01/monolith-architectural-drivers/
 - Martinfowler Microservice Testing: https://martinfowler.com/articles/microservice-testing
 - PactIo: https://pact.io/
 - Mountain Bank Testing: http://www.mbtest.org/
