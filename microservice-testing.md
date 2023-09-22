@@ -152,3 +152,4 @@ References: https://engineering.atspotify.com/2018/01/testing-of-microservices/
 - Source code - Mountain Bank: https://github.com/bbyars/mountebank-in-action
 - https://www.infoq.com/articles/twelve-testing-techniques-microservices-intro/
 - https://www.infoq.com/articles/twelve-testing-techniques-microservices-tradeoffs/
+- https://www.browserstack.com/guide/testing-strategies-in-microservices-vs-monolithic-applications
