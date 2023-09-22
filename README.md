@@ -107,3 +107,4 @@ https://microservices.io/patterns/Monolith.html
 - Communication: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
 - Microservice with AWS: https://aws.amazon.com/blogs/architecture/architecting-a-highly-available-serverless-microservices-based-ecommerce-site/
 - Monolithic and Microservices: https://aws.amazon.com/compare/the-difference-between-monolithic-and-microservices-architecture/
+- Challenges in Microservice testing: https://www.browserstack.com/guide/end-to-end-testing-in-microservices
