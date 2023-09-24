@@ -105,3 +105,5 @@ https://microservices.io/patterns/Monolith.html
 - Monolithic and Microservices: https://aws.amazon.com/compare/the-difference-between-monolithic-and-microservices-architecture/
 - AWS Example: https://github.com/aws-samples
 - Awesome AWS: https://github.com/donnemartin/awesome-aws
+- Serverless testing framework: https://www.serverless.com/framework/docs/providers/aws/guide/testing
+- Integration test - Serverless framewrok: https://www.serverless.com/blog/serverless-test-framework
