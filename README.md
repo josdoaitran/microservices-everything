@@ -20,6 +20,10 @@ Any changes on code base of software in Monolithic will impact to all software f
 
 Almost of Testing for Monolithic are focused on Unit testing and e2e testing only. 
 
+Any changes on code base of software in Monolithic will impact to all software functions, we have to test all functions to make sure the quality => higher software testing efforts, especially in E2E Testing. Then, it's difficult for us to manage and monitor the quality.
+
+Almost of Testing for Monolithic are focused on Unit testing and e2e testing only. 
+
 The big problem in Monolith architecture is scaling the system in Monolith, when multi-team will work in the same code base.
 
 The example microservice architecture system:
