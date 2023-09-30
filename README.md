@@ -16,6 +16,14 @@ As below image, we have the simple web application that built in  Monolith Archi
 
 ![Monolith](./images/monolithic.png)
 
+Any changes on code base of software in Monolithic will impact to all software functions, we have to test all functions to make sure the quality => higher software testing efforts, especially in E2E Testing. Then, it's difficult for us to manage and monitor the quality.
+
+Almost of Testing for Monolithic are focused on Unit testing and e2e testing only. 
+
+Any changes on code base of software in Monolithic will impact to all software functions, we have to test all functions to make sure the quality => higher software testing efforts, especially in E2E Testing. Then, it's difficult for us to manage and monitor the quality.
+
+Almost of Testing for Monolithic are focused on Unit testing and e2e testing only. 
+
 The big problem in Monolith architecture is scaling the system in Monolith, when multi-team will work in the same code base.
 
 The example microservice architecture system:
@@ -103,7 +111,8 @@ https://microservices.io/patterns/Monolith.html
 - Communication: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
 - Microservice with AWS: https://aws.amazon.com/blogs/architecture/architecting-a-highly-available-serverless-microservices-based-ecommerce-site/
 - Monolithic and Microservices: https://aws.amazon.com/compare/the-difference-between-monolithic-and-microservices-architecture/
-- AWS Example: https://github.com/aws-samples
+- Challenges in Microservice testing: https://www.browserstack.com/guide/end-to-end-testing-in-microservices- AWS Example: https://github.com/aws-samples
 - Awesome AWS: https://github.com/donnemartin/awesome-aws
 - Serverless testing framework: https://www.serverless.com/framework/docs/providers/aws/guide/testing
 - Integration test - Serverless framewrok: https://www.serverless.com/blog/serverless-test-framework
+- Challenges in Microservice testing: https://www.browserstack.com/guide/end-to-end-testing-in-microservices
