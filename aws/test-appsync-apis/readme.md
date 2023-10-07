@@ -1,4 +1,4 @@
-# AppSync and GraphQL 
+# AppSync <img src="https://res.cloudinary.com/appsyncmasterclass/image/upload/v1658840932/appsync-logo.svg" width="38"> and GraphQL <img src="https://splitbitio.gallerycdn.vsassets.io/extensions/splitbitio/gqlsort/0.0.2/1621060424780/Microsoft.VisualStudio.Services.Icons.Default" width="38">
 - Appsync: https://aws.amazon.com/appsync/
 - About GraphQL: https://graphql.org
 
