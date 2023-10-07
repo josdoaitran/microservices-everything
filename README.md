@@ -70,7 +70,7 @@ Include:
 + AWS Lambda
 + Amazon Dynamodb
 + Amazon API Gateway
-+ AWS Event-Bride
++ AWS Eventbridge
 
 ## Everything about Serverless testing
 Difficulties , Questions and challenges:
