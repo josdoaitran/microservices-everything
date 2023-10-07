@@ -46,3 +46,4 @@ Example sceanrios to use Lambda, we can trigger events:
 # References:
 - https://aws.amazon.com/blogs/compute/developing-portable-aws-lambda-functions/
 - https://www.youtube.com/watch?v=D5HsgNtqStk
+- https://www.youtube.com/watch?v=6hQ5pJ5xqkU
