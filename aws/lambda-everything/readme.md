@@ -34,6 +34,19 @@ https://aws.amazon.com/lambda/
     }
 ```
 
+## Trigger Lambda event:
+
+
+## Lambda Limitation:
+https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html
+**Highlight:**
+- Function timeout: 15 mins.
+- Function memory allocation: 128 MB to 10,240 MB, in 1-MB increments.
+Note: Lambda allocates CPU power in proportion to the amount of memory configured. You can increase or decrease the memory and CPU power allocated to your function using the Memory (MB) setting. At 1,769 MB, a function has the equivalent of one vCPU.
+- Concurrent executions: 1000
+- Lambda API requests: 100 requests per second.
+
+
 ## Lambda Scenario:
 Example sceanrios to use Lambda, we can trigger events:
 - File change in AWS S3 Bucket.
