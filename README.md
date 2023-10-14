@@ -62,6 +62,9 @@ The development team can focus on the product design and application layers with
 ![](https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200/https://adex.ltd/wp-content/uploads/2023/02/Microsoft-Azure-VS.-AWS-Vs.-Google-Cloud.png)
 Image refered to: https://adex.ltd/microsoft-azure-vs-aws-vs-google-cloud/
 
+## Learn about AWSServerless:
+https://serverlessland.com/learn
+
 ## Serverlesss with AWS - Example ecommerce
 - https://github.com/aws-samples/aws-serverless-ecommerce-platform
 - Building the ecommerce application using severless aws services (backend of an ecommerce website)
