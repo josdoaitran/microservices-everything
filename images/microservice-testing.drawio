@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Sh0y8UVjAB0p6koBv5Zd" name="tranditional-testing">
-        <mxGraphModel dx="608" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="872" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -37,7 +37,7 @@
                 <mxCell id="12" value="Tranditional Testing&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="120" y="10" width="280" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="&lt;h1&gt;Testing&lt;/h1&gt;&lt;p&gt;- Focus on End-to-End Testing only.&lt;/p&gt;&lt;p&gt;- End-to-End testing as Quality Gateway.&lt;/p&gt;&lt;p&gt;- Test less, no lower layers.&lt;/p&gt;&lt;p&gt;- Depend on Integrated and Deployment status&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                <mxCell id="18" value="&lt;h1&gt;Testing&lt;/h1&gt;&lt;p&gt;- Focus on End-to-End Testing only.&lt;/p&gt;&lt;p&gt;- End-to-End testing as Quality Gate&lt;/p&gt;&lt;p&gt;- Test less, no lower layers.&lt;/p&gt;&lt;p&gt;- Depend on Integrated and Deployment status&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="470" y="200" width="280" height="120" as="geometry"/>
                 </mxCell>
             </root>

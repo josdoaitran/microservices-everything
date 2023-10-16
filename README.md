@@ -24,7 +24,7 @@ Any changes on code base of software in Monolithic will impact to all software f
 
 Almost of Testing for Monolithic are focused on Unit testing and e2e testing only. 
 
-The big problem in Monolith architecture is scaling the system in Monolith, when multi-team will work in the same code base.
+The big problem in Monolith architecture is scaling the system in Monolith, when multi-team will work in the same code base and deployed in a server, be executed in a process.
 
 The example microservice architecture system:
 ![Example-Monlithic](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2021/07/14/Figure-2.-Microservices-based-order-submission-workflow.jpg)
