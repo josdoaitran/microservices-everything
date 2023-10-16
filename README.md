@@ -1,8 +1,8 @@
 ## Microservice Architecture
 Microservices - or microservice architecture - is an architectural style to develop the application that structures an application as a collection of minimal componnent as services.
-They are seperated by: 
+They are separated by: 
 + Business purposes or capabilities.
-+ Deploymenent independently.
++ Deployment independently.
 + Developed, Deployed, Managed by smaller team.
 
 Then, each microservice will have these properties:
@@ -62,7 +62,7 @@ The development team can focus on the product design and application layers with
 ![](https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200/https://adex.ltd/wp-content/uploads/2023/02/Microsoft-Azure-VS.-AWS-Vs.-Google-Cloud.png)
 Image refered to: https://adex.ltd/microsoft-azure-vs-aws-vs-google-cloud/
 
-## Learn about AWSServerless:
+## Learn about AWS Serverless:
 https://serverlessland.com/learn
 
 ## Serverlesss with AWS - Example ecommerce
