@@ -57,7 +57,6 @@ After understanding of the difficulties and challenges about testing. We need to
 
 + Unit test
 + Integration Test
-+ Component Téting
 + End to End Test
 + UI testing
 
