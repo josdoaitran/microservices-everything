@@ -1,5 +1,5 @@
 ## Microservice Architecture
-Microservices - or microservice architecture - is an architectural style to develop the application that structures an application as a collection of minimal componnent as services.
+Microservices - or microservice architecture - is an architectural style to develop the application that structures an application as a collection of minimal component as services.
 They are separated by: 
 + Business purposes or capabilities.
 + Deployment independently.
