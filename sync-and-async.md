@@ -1,7 +1,7 @@
-There are serveral communication protocols to build the system in microservices architecture. In each targets or specific scenarios, we will choose the proper communication types to transfer message or data between components.
+There are several communication protocols to build the system in microservices architecture. In each targets or specific scenarios, we will choose the proper communication types to transfer message or data between components.
 We can classify to 2 main protocol types: Sync and Async.
 
-Base on the communicaiton protocol among components and microservices, we will have 2 kinds of coupling to measure the dependency of each components in our microservices architectures.
+Base on the communication protocol among components and microservices, we will have 2 kinds of coupling to measure the dependency of each components in our microservices architectures.
 - Tight coupling
 - Loose coupling.
 
@@ -10,7 +10,7 @@ Base on the communicaiton protocol among components and microservices, we will h
 
 
 
-## Message parttern:
+## Message pattern:
 https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html
 
 ## References:
