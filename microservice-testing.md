@@ -2,21 +2,21 @@
 There are many benefits when our system is based on and built up in microservice architecture:
 - Testing for each microservices.
 - Deployment isolated
-- Scale and maintainace each components / microservices
+- Scale and maintenance each components / microservices
 
 # The challenges of Testing in Microservice:
-Microservice archtecture is more complex due to more components in a system, then it requires more testing for each layers or or each components.
+Microservice architecture is more complex due to more components in a system, then it requires more testing for each layers or or each components.
 
-Microservice requires QA and Development team change the mindset and testing strategy from Tranditional Strategy to Modern Testing Strategy.
+Microservice requires QA and Development team change the mindset and testing strategy from Traditional Strategy to Modern Testing Strategy.
 
-## Tranditional QA Testing Approach:
-- QA will perform testing and coordinated End-to-End testinng as Quality Gate before releasing the new version or deploying to production.
+## Traditional QA Testing Approach:
+- QA will perform testing and coordinated End-to-End testing as Quality Gate before releasing the new version or deploying to production.
 
 - In some cases, Testing activities will only start when the build is ready on testing environment. QA don't consider too much low layers and testing levels of applications.
 
 - All Testing Activities depends on System Deployment status if System is working on Monolithic. It's too hard to perform testing earlier.
 
-![Alt text](./images/tranditional-testing.png)
+![Alt text](./images/Traditional-testing.png)
 
 ## The Advantages of Microservice about Testing, and the challenges for end-to-end testing:
 ### The Advantages of Microservice Architecture:
@@ -49,14 +49,18 @@ E2E testing and testing in production has the same properties like that:
 => once the issue occurs, we have to trace and debug the root cause of issues in non-prod environment with e2e testing. Especially, it can be harder if the issue occurs in Production, or we trying to execute the test scenario in live prod environment.
 
 Suggested Actions:
-- Write sturected logs , meanningful log [Using JSON]
-- Setup alert, notificaiton to aware the issues as soon as posible.
+- Write structured logs , meaningful log [Using JSON]
+- Setup alert, notification to aware the issues as soon as possible.
 
 # Testing Strategy for Microservice Testing:
 After understanding of the difficulties and challenges about testing. We need to classify our testing in microservices into some testing levels as below:
 
 + Unit test
 + Integration Test
+<<<<<<< HEAD
+=======
++ Component Testing
+>>>>>>> 6bbab8e (update note microservice testing)
 + End to End Test
 + UI testing
 
@@ -70,8 +74,10 @@ Based on TDD (Test-Driven Development), we should do testing more ranges and lev
 
 
 ## Component Testing for each microservice
+Component test: We do testing for a portion of the entire microservices architecture, component testing checks the end-to-end functionality of a chosen microservice (which can be made up of a few classes) by isolating the service within the system, replacing its dependencies with test doubles and/or mock services.Component test helps us to Acceptance Test for a service.
+
 After understanding of the difficulties and challenges to do E2E testing, we tend to focus on performing the testing with lower layers, especially Component Testing.
-In below image, we visualize the example of component view of several microservices with 2 famous communications types: Asnc and Sync.
+In below image, we visualize the example of component view of several microservices with 2 famous communications types: Async and Sync.
 
 ![Component-View](./images/component-view.png)
 
@@ -99,7 +105,7 @@ Example: Using Record - Playback with mocking service to record testing from rea
 # Write tests. Not too many. Mostly integration. "Kent C. Dodds"
 Refer to: https://kentcdodds.com/blog/write-tests
 We tend to write test and focus more on Integration test to detect and prevent issues soon.
-It can be the main factors to build up the test strategy with Honeycob testing from Pyramid testing.
+It can be the main factors to build up the test strategy with Honey-cob testing from Pyramid testing.
 
 # Contract testing in Microservice testing
 Contract Test: is a software testing methodology that tests the interactions between different microservices or software components based on the contracts between them. In contract testing, each service or component is given a contract, which defines how to work with the service and which responses to accept. 

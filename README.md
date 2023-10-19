@@ -116,6 +116,7 @@ In order to run e2e testing, we have to seed the testing data and make sure our 
 
 
 # References:
+- Microservice Pattern Book: https://manning.com/books/microservices-patterns
 - Microservice IO: https://microservices.io/index.html
 - From Monolith to Microservice:
 https://microservices.io/patterns/Monolith.html
