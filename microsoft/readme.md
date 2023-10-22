@@ -1,3 +1,3 @@
 # Collections:
-- Opensource Microsoft: https://opensource.microsoft.com/projects/
+- Open source Microsoft: https://opensource.microsoft.com/projects/
 - Kubernetes Event-driven Autoscaling: https://keda.sh/

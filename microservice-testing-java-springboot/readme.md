@@ -1,12 +1,12 @@
 # Tools:
 Here is the list of all tools and terms we are using in this tutorial:
-- Java Springboot
+- Java SpringBoot
 - Junit
 - Mockito
 - Unit testing
 - Integration testing
 - Mutation testing
-- Sonarqube
+- SonarQube
 
 
 

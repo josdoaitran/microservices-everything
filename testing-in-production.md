@@ -2,7 +2,7 @@
 
 ## A/B Testing
 - AB testing ISTQB: https://glossary.istqb.org/en_US/term/ab-testing
-- AB testing in Oracke: https://www.oracle.com/vn/cx/marketing/what-is-ab-testing/
+- AB testing in Oracle: https://www.oracle.com/vn/cx/marketing/what-is-ab-testing/
 
 ## Canary Deployment
 When we deploy new version, in ordeer to reduce the downtime and descrease the bug in deployment if the new stack get troubles.

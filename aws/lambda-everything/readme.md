@@ -48,7 +48,7 @@ Note: Lambda allocates CPU power in proportion to the amount of memory configure
 
 
 ## Lambda Scenario:
-Example sceanrios to use Lambda, we can trigger events:
+Example scenarios to use Lambda, we can trigger events:
 - File change in AWS S3 Bucket.
 - Update records in AWS Dynamodb tables
 - Push Notification message

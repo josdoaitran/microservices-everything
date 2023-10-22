@@ -7,8 +7,8 @@ They are separated by:
 
 Then, each microservice will have these properties:
 + Independently deployable
-+ Serveral integration partterns with other microservices (sync, asyns, ...)
-+ Can be tested isolatedly and can be tested in integration level and integrated levels.
++ Several integration patterns with other microservices (sync, ASyns, ...)
++ Can be tested isolately and can be tested in integration level and integrated levels.
 (When your application are designed and developed in microservices architecture, the demands of your software will be more and more complex)
 
 ## Monolith and Microservice Architecture
@@ -36,11 +36,11 @@ The example microservice architecture system:
 The principle to migrate a system from Monolith to microservice architecture:
 refer to: https://microservices.io/post/refactoring/2020/07/28/six-principles-for-refactoring-to-microservices.html
 
-## Communcation protocol in Microservice Architecture:
-There are serveral communication protocols to build the system in microservices architecture. In each targets or specific scenarios, we will choose the proper communication types to transfer message or data between components.
+## Communication protocol in Microservice Architecture:
+There are several communication protocols to build the system in microservices architecture. In each targets or specific scenarios, we will choose the proper communication types to transfer message or data between components.
 We can classify to 2 main protocol types: Sync and Async.
 
-Base on the communicaiton protocol among components and microservices, we will have 2 kinds of coupling to measure the dependency of each components in our microservices architectures.
+Base on the communication protocol among components and microservices, we will have 2 kinds of coupling to measure the dependency of each components in our microservices architectures.
 - Tight coupling
 - Loose coupling.
 
@@ -51,9 +51,9 @@ In this session, we will collect all points in Testing to cover the quality of s
 Reading more [here](./microservice-testing.md)
 
 # Serverless Architecture
-In order to build and deploy the software, we tend to use the serverless architecture, it meants that we don't need to manage the infrastructure. We will use the cloud infrastructure services to build and manage our application.
+In order to build and deploy the software, we tend to use the serverless architecture, it meant that we don't need to manage the infrastructure. We will use the cloud infrastructure services to build and manage our application.
 
-The development team can focus on the product design and application layers with scaable system designs instead of managing and operating the servers and keep the infrastructure availabilities.
+The development team can focus on the product design and application layers with scalable system designs instead of managing and operating the servers and keep the infrastructure availabilities.
 
 - [AWS Services](https://aws.amazon.com/serverless/): AWS API Gateway, Lambda function, AWS ECS, AWS EKS, Step Function, S3, ..
 - [Azure Services](https://azure.microsoft.com/en-us/solutions/serverless):
@@ -65,19 +65,19 @@ Image refered to: https://adex.ltd/microsoft-azure-vs-aws-vs-google-cloud/
 ## Learn about AWS Serverless:
 https://serverlessland.com/learn
 
-## Serverlesss with AWS - Example ecommerce
+## Serverlesss with AWS - Example eCommerce
 - https://github.com/aws-samples/aws-serverless-ecommerce-platform
-- Building the ecommerce application using severless aws services (backend of an ecommerce website)
+- Building the eCommerce application using serverless aws services (backend of an eCommerce website)
 Include: 
 + AWS Appsync
 + AWS Lambda
 + Amazon Dynamodb
 + Amazon API Gateway
-+ AWS Eventbridge
++ AWS Event-bridge
 
 ## Everything about Serverless testing
 Difficulties , Questions and challenges:
-- Conplex application system.
+- Complex application system.
 - More testing layers and paradigm approaches.
 - Isolated testing.
 - Test locally ? Simulate AWS locally to do testing ? or Test full remotely on AWS service ? 
