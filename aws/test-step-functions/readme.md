@@ -2,7 +2,7 @@
 https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html
 Step Function AWS: is one of Orchestration AWS service in Microservices.
 
-Basic terms about StepFunctio:
+Basic terms about StepFunction:
 - State Machine
 - State
 - Transitions

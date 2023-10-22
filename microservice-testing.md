@@ -57,10 +57,7 @@ After understanding of the difficulties and challenges about testing. We need to
 
 + Unit test
 + Integration Test
-<<<<<<< HEAD
-=======
-+ Component Testing
->>>>>>> 6bbab8e (update note microservice testing)
++ Component Test
 + End to End Test
 + UI testing
 
@@ -132,7 +129,7 @@ Mocks:
 - doesn't cover integrated points
 
 # Mocking tools and artifacts
-- Wiremock: https://wiremock.org/ 
+- WireMock: https://wiremock.org/ 
 - Mockoon: https://mockoon.com/
 - Mockito and Java stack: https://site.mockito.org/
 - Easy mock and Java stack: https://easymock.org/
@@ -141,7 +138,7 @@ Mocks:
 - Simulate the real AWS Services.
 - NOT: Feature lags / missing (There aren't full-services simulators)
 - NOT: Doesn't simulate IAM
-- NOT:False nagatives (Simulate problems)
+- NOT: False negatives (Simulate problems)
 - NOT: Brigttle (hard to fix)
 
 
