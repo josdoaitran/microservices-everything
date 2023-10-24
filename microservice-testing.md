@@ -40,7 +40,14 @@ What we depends on third-party dependencies:
 
 ![Challenges](./images/challenges-microservice-e2e-testing.png)
 
-## Challenging to trigger the e2e testing and debug issues in e2e testing
+## Challenging to trigger the e2e testing and debug issues in e2e testing:
+E2E testing to verify all components or microservices in our application will work properly. It required all components are already deployed and integrated (Fully-Integrated system)
+
+### Challenges of E2E Testing:
+- All components should be ready before test.
+- More dependencies: If an external service is managed by a third party, it may not be possible to write end-to-end tests in a repeatable and side effect free manner. Similarly, some services may suffer from reliability problems that cause end-to-end tests to fail for reasons outside of the team's control.
+- Cost of E2E testing is high.
+
 E2E testing and testing in production has the same properties like that:
 + We need to control our testing environment before we start testing.
 + We have to spend our efforts to prepare the preconditions of each our test scenario.
@@ -57,16 +64,12 @@ After understanding of the difficulties and challenges about testing. We need to
 
 + Unit test
 + Integration Test
-<<<<<<< HEAD
-=======
 + Component Testing
->>>>>>> 6bbab8e (update note microservice testing)
 + End to End Test
 + UI testing
 
-Test Pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
-
-Testing Google at Scale: https://abseil.io/resources/swe-book/html/ch11.html
+- Test Pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+- Testing Google at Scale: https://abseil.io/resources/swe-book/html/ch11.html
 
 ![TestPyramid](./images/test-pyramid.png)
 
@@ -132,7 +135,7 @@ Mocks:
 - doesn't cover integrated points
 
 # Mocking tools and artifacts
-- Wiremock: https://wiremock.org/ 
+- WireMock: https://wiremock.org/ 
 - Mockoon: https://mockoon.com/
 - Mockito and Java stack: https://site.mockito.org/
 - Easy mock and Java stack: https://easymock.org/
@@ -141,12 +144,12 @@ Mocks:
 - Simulate the real AWS Services.
 - NOT: Feature lags / missing (There aren't full-services simulators)
 - NOT: Doesn't simulate IAM
-- NOT:False nagatives (Simulate problems)
+- NOT: False negatives (Simulate problems)
 - NOT: Brigttle (hard to fix)
 
 
 # Now not Test Pyramid, now we are in HoneyComb Microservice testing strategy
-We are going ton increase more tests in ealier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
+We are going ton increase more tests in earlier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
 
 ![Pyramid-vs-HoneyComb](./images/pyramid-vs-honeycomb.png)
 
