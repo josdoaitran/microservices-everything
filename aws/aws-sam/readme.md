@@ -18,6 +18,7 @@ Benefits of using the SAM transform include:
 ## AWS SAM Cli
 The AWS Serverless Application Model (SAM) CLI is an open-source CLI tool that helps you develop serverless applications containing Lambda functions, Step Functions, API Gateway, EventBridge, SQS, SNS and more.
 
+- Setup AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 - Setup AWS SAM Cli: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
 - Example commands:
 ```
