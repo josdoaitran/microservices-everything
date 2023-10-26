@@ -55,8 +55,16 @@ Example scenarios to use Lambda, we can trigger events:
 - Email sending event message
 
 
+## Lambda local for testing:
+
 
 # References:
 - https://aws.amazon.com/blogs/compute/developing-portable-aws-lambda-functions/
+- https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/ 
+- https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html
+- https://github.com/aws-samples/serverless-test-samples
+- Document shared by AWS: https://pages.awscloud.com/rs/112-TZM-766/images/APMWQ3D4S4%20Solving%20testing%20challenges%20for%20serverless%20on%20AWS.pdf
+- https://lifesciences-resources.awscloud.com/vidyard-all-players/apmwq3d4s4-solving-testing-challenges-for-serverless-on-aws-2
+- AWS Moto: https://github.com/getmoto/moto
 - https://www.youtube.com/watch?v=D5HsgNtqStk
 - https://www.youtube.com/watch?v=6hQ5pJ5xqkU
