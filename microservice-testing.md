@@ -139,11 +139,11 @@ Mocks:
 - NOT: Feature lags / missing (There aren't full-services simulators)
 - NOT: Doesn't simulate IAM
 - NOT: False negatives (Simulate problems)
-- NOT: Brigttle (hard to fix)
+- NOT: Brittle (hard to fix)
 
 
 # Now not Test Pyramid, now we are in HoneyComb Microservice testing strategy
-We are going ton increase more tests in ealier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
+We are going ton increase more tests in earlier levels with component and integration testing, we will have the approaches as HoneyComb, it replaces Pyramids. when we reduce Unit test and consider more integration and component testing.
 
 ![Pyramid-vs-HoneyComb](./images/pyramid-vs-honeycomb.png)
 
