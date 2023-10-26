@@ -34,3 +34,4 @@ The couple of components / services of serverless works together.
 - AWS SAM Github: https://github.com/josdoaitran/microservices-everything/tree/main/aws/aws-sam
 - Integration Test with Moto: https://github.com/getmoto/moto
 - Serverless-test-samples: https://github.com/aws-samples/serverless-test-samples
+- [Solving-Testing-Challenges-For-Serverless-On-AWS](https://lifesciences-resources.awscloud.com/vidyard-all-players/apmwq3d4s4-solving-testing-challenges-for-serverless-on-aws-2)
