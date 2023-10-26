@@ -3,6 +3,12 @@
 - Microsoft Serverless: 
 
 # Testing challenges for Serverless Architecture:
+We can do testing types:
+- Unit test
+- Integration test
+- Component test
+- E2E Test
+
 
 
 # Tools for Serverless Testing:
