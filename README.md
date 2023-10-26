@@ -7,8 +7,8 @@ They are separated by:
 
 Then, each microservice will have these properties:
 + Independently deployable
-+ Several integration patterns with other microservices (sync, ASyns, ...)
-+ Can be tested isolately and can be tested in integration level and integrated levels.
++ Several integration patterns with other microservices (sync, Asyns, ...)
++ Can be tested in isolate and can be tested in integration level and integrated levels.
 (When your application are designed and developed in microservices architecture, the demands of your software will be more and more complex)
 
 ## Monolith and Microservice Architecture
@@ -60,12 +60,12 @@ The development team can focus on the product design and application layers with
 - [Google Cloud](https://cloud.google.com/): Azure Function, Kubernetes Service, Block Blob, ...
 
 ![](https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200/https://adex.ltd/wp-content/uploads/2023/02/Microsoft-Azure-VS.-AWS-Vs.-Google-Cloud.png)
-Image refered to: https://adex.ltd/microsoft-azure-vs-aws-vs-google-cloud/
+Image refer to: https://adex.ltd/microsoft-azure-vs-aws-vs-google-cloud/
 
 ## Learn about AWS Serverless:
 https://serverlessland.com/learn
 
-## Serverlesss with AWS - Example eCommerce
+## Serverless with AWS - Example eCommerce
 - https://github.com/aws-samples/aws-serverless-ecommerce-platform
 - Building the eCommerce application using serverless aws services (backend of an eCommerce website)
 Include: 
@@ -95,17 +95,17 @@ Example:
 
 ### AWS Event Driven Components:
 - SNS
-- Event-Brigde
+- Event-bridge
 - SQS
 - Kinesis
 
-## Serverless - AWS Service with isolated environmemt
-We are working in mutitlple testing environment with different aws accounts. It helps us devide our testing to more test levels, easier to control the quality of products. We can consider the below model, all these environment are just standalone CloudFormation (AWS) stacks and can be easier to deployed, managed and removed (cleaned up the lower environment) if we needed.
+## Serverless - AWS Service with isolated environment
+We are working in multiple testing environment with different aws accounts. It helps us category our testing to more test levels, easier to control the quality of products. We can consider the below model, all these environment are just standalone CloudFormation (AWS) stacks and can be easier to deployed, managed and removed (cleaned up the lower environment) if we needed.
 
 ![Muti-account-Multi-environment](./images/muti-account-multi-environment.png)
 
 ## Temporary test environment with https://school.theburningmonk.com/: 
-This ideas is manipulated as the testing demands: setup: run test: and teardown, to keep our testing rerunable and executable continuously.
+This ideas is manipulated as the testing demands: setup: run test: and teardown, to keep our testing repeatable execution and executable continuously.
 In order to run e2e testing, we have to seed the testing data and make sure our testing environment be ready before we run the test.
 
 
