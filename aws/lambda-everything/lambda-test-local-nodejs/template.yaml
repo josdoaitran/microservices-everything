@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2023-10-27'
+Transform: AWS::Serverless-2023-10-27
+Description: >
+  lambda local example
+
+  
+Resources:
+  LambdaDemoFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: lambda/ # format is projectPath/
+      Handler: lambda.lambdaHandler # format is filename.functionName
+      Runtime: nodejs12.x
