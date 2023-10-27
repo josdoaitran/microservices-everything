@@ -35,7 +35,7 @@ https://aws.amazon.com/lambda/
 ```
 
 ## Trigger Lambda event:
-- Prerequisite: Install SAM
+- Prerequisite: Install SAM local, we can refer to [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
 - Prefer to [here](./lambda-test-local-nodejs/)
 
 ## Lambda Limitation:
