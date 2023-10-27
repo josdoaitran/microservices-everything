@@ -25,6 +25,7 @@ The couple of components / services of serverless works together.
 - Integration Test with Moto: https://github.com/getmoto/moto
 - AWS SAM: https://aws.amazon.com/serverless/sam/
 
+# Testing AWS Lambda locally:
 
 # References:
 - Testing AWS Serverless Application: https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/
