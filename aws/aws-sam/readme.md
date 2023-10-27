@@ -20,6 +20,7 @@ The AWS Serverless Application Model (SAM) CLI is an open-source CLI tool that h
 
 - Setup AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 - Setup AWS SAM Cli: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
+- Besides, we need to install docker in our local.
 - Example commands:
 ```
 # To verify whether sam is installed or not
@@ -27,6 +28,20 @@ $ which sam
 /usr/local/bin/sam
 $ sam --version
 SAM CLI, version 1.94.0
+```
+# Example
+You can refer to:
+## SAM with Python:
+Lambda and API Gateway with SAM: [Here](./../lambda-everything/lambda-test-local-nodejs/)
+Command to invoke an event:
+```
+sam local invoke -e ./lambda/test_lambda_event.json LambdaExampleFunction
+```
+## SAM with API Gateway:
+Commands:
+```
+sam local invoke -e ./apigateway/apigateway_event.json ApiGatewayFunction
+sam local start-api
 ```
 
 # References:
