@@ -8,7 +8,7 @@ https://aws.amazon.com/lambda/
 - Focus on Code and action methods only, instead of managing and maintaining the server.
 - AWS manage the functions in their computers.
 - Your defined code as methods, and they can be triggered by: Events (S3 object updated, new records in Dynamodb, Event message, ...) or Request/ Response (be received from AWS Gateway Integration)
-- AWS Scaleable in our demands.
+- AWS Scalable in our demands.
 - Pay per what we uses. => Pricing: https://aws.amazon.com/lambda/pricing/
 - Support (EDA) Event Driven Architecture. 
 - Able to work with another AWS services (Dynamodb, API Gateway, S3, ...)
@@ -34,8 +34,6 @@ https://aws.amazon.com/lambda/
     }
 ```
 
-## Trigger Lambda event:
-
 
 ## Lambda Limitation:
 https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html
@@ -56,6 +54,15 @@ Example scenarios to use Lambda, we can trigger events:
 
 
 ## Lambda local for testing:
+## Prerequisite: 
+- Install SAM local, we can refer to [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
+- Install Docker
+## Example Lambda Locally Testing:
+Prefer to [here](./lambda-test-local-nodejs/) to have the example lambda local.
+- Run to invoke test locally:
+```
+sam local invoke -e ./lambda/lambda_event.json LambdaDemoFunction  
+```
 
 
 # References:
