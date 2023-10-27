@@ -8,7 +8,7 @@ https://aws.amazon.com/lambda/
 - Focus on Code and action methods only, instead of managing and maintaining the server.
 - AWS manage the functions in their computers.
 - Your defined code as methods, and they can be triggered by: Events (S3 object updated, new records in Dynamodb, Event message, ...) or Request/ Response (be received from AWS Gateway Integration)
-- AWS Scaleable in our demands.
+- AWS Scalable in our demands.
 - Pay per what we uses. => Pricing: https://aws.amazon.com/lambda/pricing/
 - Support (EDA) Event Driven Architecture. 
 - Able to work with another AWS services (Dynamodb, API Gateway, S3, ...)
