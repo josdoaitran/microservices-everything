@@ -30,8 +30,8 @@ $ sam --version
 SAM CLI, version 1.94.0
 ```
 # Example
-You can refer to:
-## SAM with Python:
+Here is the list of example code wit AWS SAM
+## SAM with Lambda:
 Lambda and API Gateway with SAM: [Here](./../lambda-everything/lambda-test-local-nodejs/)
 Command to invoke an event:
 ```
@@ -43,6 +43,7 @@ Commands:
 sam local invoke -e ./apigateway/apigateway_event.json ApiGatewayFunction
 sam local start-api
 ```
+- [To work AWS API Gateway local with SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-start-api.html)
 
 # References:
 - https://github.com/aws-samples/aws-serverless-ecommerce-platform
