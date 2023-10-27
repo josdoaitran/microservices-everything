@@ -35,7 +35,8 @@ https://aws.amazon.com/lambda/
 ```
 
 ## Trigger Lambda event:
-
+- Prerequisite: Install SAM
+- Prefer to [here](./lambda-test-local-nodejs/)
 
 ## Lambda Limitation:
 https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html
