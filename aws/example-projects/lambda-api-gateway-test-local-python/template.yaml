@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2023-10-27'
+Transform: AWS::Serverless-2023-10-27
+Description: >
+  apigateway local example
+
+  
+Resources:
+  APIGatewayFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: apigateway.ratings.handler
+      Runtime: python3.9
+      Events:
+        Api:
+            Type: Api
+            Properties:
+              Path: /ratings
+              Method: get

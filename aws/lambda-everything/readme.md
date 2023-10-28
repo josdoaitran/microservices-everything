@@ -58,7 +58,7 @@ Example scenarios to use Lambda, we can trigger events:
 - Install SAM local, we can refer to [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
 - Install Docker
 ## Example Lambda Locally Testing:
-Prefer to [here](./../example-projects/lambda-test-local-nodejs/) to have the example lambda local.
+Prefer to [here](../example-projects/lambda-api-gateway-test-local-nodejs/) to have the example lambda local.
 - Run to invoke test locally:
 ```
 sam local invoke -e ./lambda/lambda_event.json LambdaDemoFunction  

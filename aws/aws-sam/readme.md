@@ -29,6 +29,8 @@ $ which sam
 $ sam --version
 SAM CLI, version 1.94.0
 ```
+![get-started-sam.png](get-started-sam.png)
+
 # Example
 Here is the list of example code wit AWS SAM
 ## SAM with Lambda:
@@ -48,3 +50,4 @@ sam local start-api
 # References:
 - https://github.com/aws-samples/aws-serverless-ecommerce-platform
 - https://github.com/beabetterdevv/lambda_local/blob/master/apigateway/apigateway_event.json
+- https://www.youtube.com/watch?v=MipjLaTp5nA&ab_channel=BeABetterDev
