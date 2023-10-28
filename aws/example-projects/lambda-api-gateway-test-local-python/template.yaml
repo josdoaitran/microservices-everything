@@ -8,7 +8,7 @@ Resources:
   APIGatewayFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: ratings.handler
+      Handler: apigateway.ratings.handler
       Runtime: python3.9
       Events:
         Api:
