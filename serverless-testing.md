@@ -1,6 +1,6 @@
 # Serverless ?
-- AWS Serverless: 
-- Microsoft Serverless: 
+- AWS Serverless: https://aws.amazon.com/serverless/
+- Azure Microsoft Serverless: https://azure.microsoft.com/en-us/solutions/serverless
 
 # Testing challenges for Serverless Architecture:
 We can do testing types:
@@ -9,7 +9,8 @@ We can do testing types:
 - Component test
 - E2E Test
 
-## E2E testing as End User, we can be:
+## E2E testing
+As EndUser, tester will do:
 
 ### Manage resources, service in testing:  
 Make sure all components (Including external service ready)
@@ -27,6 +28,28 @@ The couple of components / services of serverless works together.
 
 # Testing AWS Lambda locally:
 
+https://github.com/aws-samples/serverless-test-samples/tree/main/python-test-samples
+## Example Unit test
+Refer to: https://aws.amazon.com/blogs/devops/unit-testing-aws-lambda-with-python-and-mock-aws-services/
+Example with API Gateway, Lambda, S3 and Dynamodb: 
+![Example-Lambda-Testing](./aws/example-projects/test-lambda-python/example-lambda-python.png)
+### Functionality of each service:
+1. API Gateway: provides an endpoint to request the generation of a document for a given customer.  A document type and customer identifier are provided in this API call.
+2. Lambda: The endpoint invokes an AWS Lambda function that generates a document using the customer identifier and the document type provided.
+3. Dynamodb: An Amazon DynamoDB table stores the contents of the documents and the users name, which are retrieved by the Lambda function.
+4. S3: The resulting text document is stored to Amazon S3.
+
+## Example Integration test
+
+## Example E2E test
+
+# Testing Asynchronous Architectures:
+We can refer to here: https://github.com/aws-samples/serverless-test-samples/blob/main/python-test-samples/README-ASYNC.md#create-test-harnesses
+
+## Testing Pyramid and Testing Honey Comb:
+- https://dev.to/prozz/serverless-testing-pyramid-21f7
+- [Honey Comb Serverless](https://www.infoq.com/presentations/honeycomb-serverless/?itm_campaign=rightbar_v2&itm_source=infoq&itm_medium=presentations_link&itm_content=link_text)
+
 # References:
 - Testing AWS Serverless Application: https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/
 - Serverless Test and Debug: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html
@@ -37,3 +60,4 @@ The couple of components / services of serverless works together.
 - Serverless-test-samples: https://github.com/aws-samples/serverless-test-samples
 - Slide: Solving-Testing-Challenges-For-Serverless-On-AWS:https://pages.awscloud.com/rs/112-TZM-766/images/APMWQ3D4S4%20Solving%20testing%20challenges%20for%20serverless%20on%20AWS.pdf
 - [Solving-Testing-Challenges-For-Serverless-On-AWS](https://lifesciences-resources.awscloud.com/vidyard-all-players/apmwq3d4s4-solving-testing-challenges-for-serverless-on-aws-2)
+- Serverless Test in Principle:https://github.com/aws-samples/serverless-test-samples/blob/main/Serverless-Testing-Principles.md

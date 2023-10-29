@@ -105,17 +105,15 @@ We are working in multiple testing environment with different aws accounts. It h
 ![Muti-account-Multi-environment](./images/muti-account-multi-environment.png)
 
 ## Temporary test environment with https://school.theburningmonk.com/: 
-This ideas is manipulated as the testing demands: setup: run test: and teardown, to keep our testing repeatable execution and executable continuously.
+This idea is manipulated as the testing demands: setup: run test: and teardown, to keep our testing repeatable execution and executable continuously.
 In order to run e2e testing, we have to seed the testing data and make sure our testing environment be ready before we run the test.
 
 
-
-## References:
-- https://aws.amazon.com/lambda/serverless-architectures-learn-more
-- https://www.infoq.com/news/2016/08/serverless-autodesk/
+## Testing Asynchronous Architectures:
+We can refer to here: https://github.com/aws-samples/serverless-test-samples/blob/main/python-test-samples/README-ASYNC.md#create-test-harnesses
 
 
-# References:
+# References for Microservices:
 - Microservice Pattern Book: https://manning.com/books/microservices-patterns
 - Microservice IO: https://microservices.io/index.html
 - From Monolith to Microservice:
