@@ -27,6 +27,20 @@ The couple of components / services of serverless works together.
 
 # Testing AWS Lambda locally:
 
+https://github.com/aws-samples/serverless-test-samples/tree/main/python-test-samples
+## Example Unit test
+
+## Example Integration test
+
+## Example E2E test
+
+# Testing Asynchronous Architectures:
+We can refer to here: https://github.com/aws-samples/serverless-test-samples/blob/main/python-test-samples/README-ASYNC.md#create-test-harnesses
+
+## Testing Pyramid and Testing Honey Comb:
+- https://dev.to/prozz/serverless-testing-pyramid-21f7
+- [Honey Comb Serverless](https://www.infoq.com/presentations/honeycomb-serverless/?itm_campaign=rightbar_v2&itm_source=infoq&itm_medium=presentations_link&itm_content=link_text)
+
 # References:
 - Testing AWS Serverless Application: https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/
 - Serverless Test and Debug: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html
