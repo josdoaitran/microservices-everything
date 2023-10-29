@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT-0
 """
 
-# Start of lambda handler code:  src/sampleLambda/app.py
+# Start of lambda handler code:  sample-lambda/app.py
 from os import environ
 from typing import Any, Dict
 from boto3 import resource
