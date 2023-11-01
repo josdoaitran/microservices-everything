@@ -37,14 +37,16 @@ The principle to migrate a system from Monolith to microservice architecture:
 refer to: https://microservices.io/post/refactoring/2020/07/28/six-principles-for-refactoring-to-microservices.html
 
 ## Communication protocol in Microservice Architecture:
-There are several communication protocols to build the system in microservices architecture. In each targets or specific scenarios, we will choose the proper communication types to transfer message or data between components.
+There are several communication protocols to build the system in microservices architecture. In each target or specific scenarios, we will choose the proper communication types to transfer message or data between components.
 We can classify to 2 main protocol types: Sync and Async.
 
-Base on the communication protocol among components and microservices, we will have 2 kinds of coupling to measure the dependency of each components in our microservices architectures.
+Base on the communication protocol among components and microservices, we will have 2 kinds of coupling to measure the dependency of each component in our microservices architectures.
 - Tight coupling
 - Loose coupling.
 
 Read more [Here](./sync-and-async.md)
+
+The differences between Http APIs and Rest APIs: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html 
 
 ## Microservice Testing
 In this session, we will collect all points in Testing to cover the quality of system in Microservice Architecture.
