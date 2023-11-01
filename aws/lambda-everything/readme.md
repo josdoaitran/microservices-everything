@@ -58,11 +58,22 @@ Example scenarios to use Lambda, we can trigger events:
 - Install SAM local, we can refer to [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
 - Install Docker
 ## Example Lambda Locally Testing:
+
 Prefer to [here](../example-projects/lambda-api-gateway-test-local-nodejs/) to have the example lambda local.
+
 - Run to invoke test locally:
 ```
 sam local invoke -e ./lambda/lambda_event.json LambdaDemoFunction  
 ```
+Note:
+To activate Python Virtual Environment, we need to run these commands:
+```
+python3 -m pip install --user virtualenv
+python3 -m venv env
+source env/bin/activate
+python3 -m pip install -r requirements.txt
+```
+Refer to: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 
 # References:
