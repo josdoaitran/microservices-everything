@@ -80,7 +80,7 @@ Refer to: https://packaging.python.org/en/latest/guides/installing-using-pip-and
 - https://aws.amazon.com/blogs/compute/developing-portable-aws-lambda-functions/
 - https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/ 
 - https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html
-- https://github.com/aws-samples/serverless-test-samples
+- e
 - Document shared by AWS: https://pages.awscloud.com/rs/112-TZM-766/images/APMWQ3D4S4%20Solving%20testing%20challenges%20for%20serverless%20on%20AWS.pdf
 - https://lifesciences-resources.awscloud.com/vidyard-all-players/apmwq3d4s4-solving-testing-challenges-for-serverless-on-aws-2
 - AWS Moto: https://github.com/getmoto/moto
