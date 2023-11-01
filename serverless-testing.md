@@ -10,7 +10,7 @@ We can do testing types:
 - E2E Test
 
 ## E2E testing
-As EndUser, tester will do:
+As End-User, tester will do:
 
 ### Manage resources, service in testing:  
 Make sure all components (Including external service ready)
