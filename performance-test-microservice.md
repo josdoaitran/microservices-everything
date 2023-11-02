@@ -8,3 +8,6 @@ In this note, I would like to mention and collect the essential points about Per
 TBD
 # Performance test for Serverless
 TBD
+
+# References:
+- Distributed-load-testing-on-aws: https://github.com/aws-solutions/distributed-load-testing-on-aws

@@ -11,7 +11,7 @@ We collect and share the key concepts about Event Driven Architecutres and some 
 [More information from Martin Fowler](https://martinfowler.com/articles/201701-event-driven.html)
 
 
-## Example System Artchitecture with Event-Driven
+## Example System Architecture with Event-Driven
 - Event Notification.
 - Event-carried State Transfer
 - Event Sourcing.
