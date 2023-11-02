@@ -1,201 +1,142 @@
-"""
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
 
-# Start of unit test code: tests/unit/src/test_sample_lambda.py
-"""
-
-import sys
-import os
+from os import environ
 import json
+from datetime import datetime
 from unittest import TestCase
-from unittest.mock import MagicMock, patch
-from boto3 import resource, client
+from typing import Any, Dict
+from uuid import uuid4
+import yaml
+import boto3
+from boto3.dynamodb.conditions import Key
 import moto
-from aws_lambda_powertools.utilities.validation import validate
 
-# [0] Import the Globals, Classes, Schemas, and Functions from the Lambda Handler
-sys.path.append('./sample-lambda')
-from sample-lambda.app import LambdaDynamoDBClass, LambdaS3Class   # pylint: disable=wrong-import-position
-from sample-lambda.app import lambda_handler, create_letter_in_s3  # pylint: disable=wrong-import-position
-from sample-lambda.schemas import INPUT_SCHEMA                     # pylint: disable=wrong-import-position
 
-# [1] Mock all AWS Services in use
+# Import the handler under test
+from sample-lambda import app
+
+# Mock the DynamoDB Service during the test
 @moto.mock_dynamodb
-@moto.mock_s3
-class TestSampleLambda(TestCase):
+
+class TestSampleLambdaWithDynamoDB(TestCase):
     """
-    Test class for the application sample AWS Lambda Function
+    Unit Test class for src/app.py
     """
 
-    # Test Setup
     def setUp(self) -> None:
         """
-        Create mocked resources for use during tests
+        Test Set up:
+           1. Create the lambda environment variale DYNAMODB_TABLE_NAME
+           2. Build a DynamoDB Table according to the SAM template
+           3. Create a random postfix for this test instance to prevent data collisions
+           4. Populate DynamoDB Data into the Table for test
         """
 
-        # [2] Mock environment & override resources
-        self.test_ddb_table_name = "unit_test_ddb"
-        self.test_s3_bucket_name = "unit_test_s3_bucket"
-        os.environ["DYNAMODB_TABLE_NAME"] = self.test_ddb_table_name
-        os.environ["S3_BUCKET_NAME"] = self.test_s3_bucket_name
+        # Create a name for a test table, and set the environment
+        self.test_ddb_table_name = "unit_test_ddb_table_name"
+        environ["DYNAMODB_TABLE_NAME"] = self.test_ddb_table_name
 
-        # [3a] Set up the services: construct a (mocked!) DynamoDB table
-        dynamodb = resource("dynamodb", region_name="us-east-1")
-        dynamodb.create_table(
+        # Create a mock table using the definition from the SAM YAML template
+        # This simple technique works if there are no intrinsics (like !If or !Ref) in the
+        # resource properties for KeySchema, AttributeDefinitions, & BillingMode.
+        sam_template_table_properties = self.read_sam_template()["Resources"]["DynamoDBTable"]["Properties"]
+        self.mock_dynamodb = boto3.resource("dynamodb")
+        self.mock_dynamodb_table = self.mock_dynamodb.create_table(
             TableName = self.test_ddb_table_name,
-            KeySchema=[{"AttributeName": "PK", "KeyType": "HASH"}],
-            AttributeDefinitions=[{"AttributeName": "PK", "AttributeType": "S"}],
-            BillingMode='PAY_PER_REQUEST'
+            KeySchema = sam_template_table_properties["KeySchema"],
+            AttributeDefinitions = sam_template_table_properties["AttributeDefinitions"],
+            BillingMode = sam_template_table_properties["BillingMode"]
         )
 
-        # [3b] Set up the services: construct a (mocked!) S3 Bucket table
-        s3_client = client('s3', region_name="us-east-1")
-        s3_client.create_bucket(Bucket = self.test_s3_bucket_name )
+        # Create a random postfix for the id's to prevent data collions between tests
+        # Using unique id's per unit test will isolate test data
+        self.id_postfix = "_" + str(uuid4())
 
-        # [4] Establish the "GLOBAL" environment for use in tests.
-        mocked_dynamodb_resource = resource("dynamodb")
-        mocked_s3_resource = resource("s3")
-        mocked_dynamodb_resource = { "resource" : resource('dynamodb'),
-                                     "table_name" : self.test_ddb_table_name  }
-        mocked_s3_resource = { "resource" : resource('s3'),
-                               "bucket_name" : self.test_s3_bucket_name }
-        self.mocked_dynamodb_class = LambdaDynamoDBClass(mocked_dynamodb_resource)
-        self.mocked_s3_class = LambdaS3Class(mocked_s3_resource)
-
-
-    def test_create_letter_in_s3(self) -> None:
-        """
-        Verify given correct parameters, the document will be written to S3 with proper contents.
-        """
-
-        # [5] Post test items to a mocked database
-        self.mocked_dynamodb_class.table.put_item(Item={"PK":"D#UnitTestDoc",
-                                                        "data":"Unit Test Doc Corpi"})
-        self.mocked_dynamodb_class.table.put_item(Item={"PK":"C#UnitTestCust",
-                                                        "data":"Unit Test Customer"})
-
-        # [6] Run DynamoDB to S3 file function
-        test_return_value = create_letter_in_s3(
-            dynamo_db = self.mocked_dynamodb_class,
-            s3=self.mocked_s3_class,
-            doc_type = "UnitTestDoc",
-            cust_id = "UnitTestCust"
-        )
-
-        # [7] Ensure the data was written to S3 correctly, with correct contents
-        bucket_key = "UnitTestCust/UnitTestDoc.txt"
-        body = self.mocked_s3_class.bucket.Object(bucket_key).get()['Body'].read()
-
-        # Test
-        self.assertEqual(test_return_value["statusCode"], 200)
-        self.assertIn("UnitTestCust/UnitTestDoc.txt", test_return_value["body"])
-        self.assertEqual(body.decode('ascii'),"Dear Unit Test Customer;\nUnit Test Doc Corpi")
-
-
-    def test_create_letter_in_s3_doc_type_notfound_404(self) -> None:
-        """
-        Verify given a document type not present in the data table, a 404 error is returned.
-        """
-        # [8] Post test items to a mocked database
-        self.mocked_dynamodb_class.table.put_item(Item={"PK":"D#UnitTestDoc",
-                                                        "data":"Unit Test Doc Corpi"})
-        self.mocked_dynamodb_class.table.put_item(Item={"PK":"C#UnitTestCust",
-                                                        "data":"Unit Test Customer"})
-
-        # [9] Run DynamoDB to S3 file function
-        test_return_value = create_letter_in_s3(
-            dynamo_db = self.mocked_dynamodb_class,
-            s3=self.mocked_s3_class,
-            doc_type = "NOTVALID",
-            cust_id = "UnitTestCust"
-        )
-
-        # Test
-        self.assertEqual(test_return_value["statusCode"], 404)
-        self.assertIn("Not Found", test_return_value["body"])
-
-    def test_create_letter_in_s3_customer_notfound_404(self) -> None:
-        """
-        Verify given a user id not present in the data table, a 404 error is returned.
-        """
-
-        # [10] Post test items to a mocked database
-        self.mocked_dynamodb_class.table.put_item(Item={"PK":"D#UnitTestDoc",
-                                                        "data":"Unit Test Doc Corpi"})
-        self.mocked_dynamodb_class.table.put_item(Item={"PK":"C#UnitTestCust",
-                                                        "data":"Unit Test Customer"})
-
-        # [11] Run DynamoDB to S3 file function
-        test_return_value = create_letter_in_s3(
-            dynamo_db = self.mocked_dynamodb_class,
-            s3=self.mocked_s3_class,
-            doc_type = "UnitTestDoc",
-            cust_id = "NOTVALID"
-        )
-
-        # Test
-        self.assertEqual(test_return_value["statusCode"], 404)
-        self.assertIn("Not Found", test_return_value["body"])
-
-    # [12] Load and validate test events from the file system
-    def load_sample_event_from_file(self, test_event_file_name: str) ->  dict:
-        """
-        Loads and validate test events from the file system
-        """
-        event_file_name = f"tests/events/{test_event_file_name}.json"
-        with open(event_file_name, "r", encoding='UTF-8') as file_handle:
-            event = json.load(file_handle)
-            validate(event=event, schema=INPUT_SCHEMA)
-            return event
-
-    # [13] Patch the Global Class and any function calls
-    @patch("src.sample_lambda.app.LambdaDynamoDBClass")
-    @patch("src.sample_lambda.app.LambdaS3Class")
-    @patch("src.sample_lambda.app.create_letter_in_s3")
-    def test_lambda_handler_valid_event_returns_200(self,
-                                                    patch_create_letter_in_s3 : MagicMock,
-                                                    patch_lambda_s3_class : MagicMock,
-                                                    patch_lambda_dynamodb_class : MagicMock
-                                                    ):
-        """
-        Verify the event is parsed, AWS resources are passed, the
-        create_letter_in_s3 function is called, and a 200 is returned.
-        """
-
-        # [14] Test setup - Return a mock for the global variables and resources
-        patch_lambda_dynamodb_class.return_value = self.mocked_dynamodb_class
-        patch_lambda_s3_class.return_value = self.mocked_s3_class
-
-        return_value_200 = {"statusCode" : 200, "body":"OK"}
-        patch_create_letter_in_s3.return_value = return_value_200
-
-        # [15] Run Test using a test event from /tests/events/*.json
-        test_event = self.load_sample_event_from_file("sampleEvent1")
-        test_return_value = lambda_handler(event=test_event, context=None)
-
-        # [16] Validate the function was called with the mocked globals
-        # and event values
-        patch_create_letter_in_s3.assert_called_once_with(
-            dynamo_db=self.mocked_dynamodb_class,
-            s3=self.mocked_s3_class,
-            doc_type=test_event["pathParameters"]["docType"],
-            cust_id=test_event["pathParameters"]["customerId"])
-
-        self.assertEqual(test_return_value, return_value_200)
-
+        # Populate data for the tests
+        self.mock_dynamodb_table.put_item(Item={"PK": "TEST001" + self.id_postfix,
+                                                "SK": "NAME#",
+                                                "data": "Unit Test Name Data"})
 
     def tearDown(self) -> None:
+        """
+        For teardown, remove the mocked table & environment variable
+        """
+        self.mock_dynamodb_table.delete()
+        del environ['DYNAMODB_TABLE_NAME']
 
-        # [13] Remove (mocked!) S3 Objects and Bucket
-        s3_resource = resource("s3",region_name="us-east-1")
-        s3_bucket = s3_resource.Bucket( self.test_s3_bucket_name )
-        for key in s3_bucket.objects.all():
-            key.delete()
-        s3_bucket.delete()
+    def read_sam_template(self, sam_template_fn : str = "template.yaml" ) -> dict:
+        """
+        Utility Function to read the SAM template for the current project
+        """
+        with open(sam_template_fn, "r") as fp:
+            template =fp.read().replace("!","")   # Ignoring intrinsic tags
+            return yaml.safe_load(template)
 
-        # [14] Remove (mocked!) DynamoDB Table
-        dynamodb_resource = client("dynamodb", region_name="us-east-1")
-        dynamodb_resource.delete_table(TableName = self.test_ddb_table_name )
+    def load_test_event(self, test_event_file_name: str) ->  Dict[str, Any]:
+        """
+        Load a sample event from a file
+        Add the test isolation postfix to the path parameter {id}
+        """
+        with open(f"tests/events/{test_event_file_name}.json","r") as f:
+            event = json.load(f)
+            event["pathParameters"]["id"] = event["pathParameters"]["id"] + self.id_postfix
+            return event
 
-# End of unit test code
+
+    def test_lambda_handler_happy_path(self):
+        """
+        Happy path test where the id name record exists in the DynamoDB Table
+
+        Since the environment variable DYNAMODB_TABLE_NAME is set 
+        and DynamoDB is mocked for the entire class, this test will 
+        implicitly use the mocked DynamoDB table we created in setUp.
+        """
+
+        test_event = self.load_test_event("sampleEvent_Found_TEST001")
+        test_return = app.lambda_handler(event=test_event,context=None)
+        self.assertEqual( test_return["statusCode"] , 200)
+        self.assertEqual( test_return["body"] , "Hello Unit Test Name Data!")
+
+        # Verify the log entries
+
+        id_items = self.mock_dynamodb_table.query(
+            KeyConditionExpression=Key('PK').eq('TEST001' + self.id_postfix)
+        )
+
+        # Log entry item to the original name item
+        self.assertEqual( len(id_items["Items"]) , 2)
+
+        # Check the log entry item
+        for item in id_items["Items"]:
+            if item["SK"] != "NAME#":
+                self.assertEqual( item["data"] , "Hello Unit Test Name Data!")
+                self.assertEqual( item["SK"][0:11] , "DT#" + datetime.now().strftime("%Y%m%d"))
+
+
+    def test_lambda_handler_notfound_path(self):
+        """
+        Unhappy path test where the id name record does not exist in the DynamoDB Table
+        """
+
+        test_event = self.load_test_event("sampleEvent_NotFound_TEST002")
+        test_return = app.lambda_handler(event=test_event,context=None)
+        self.assertEqual( test_return["statusCode"] , 404)
+        self.assertEqual( test_return["body"] , "NOTFOUND: Name Not Found for ID TEST002" + self.id_postfix)
+
+        # Verify the log entries
+
+        id_items = self.mock_dynamodb_table.query(
+            KeyConditionExpression=Key('PK').eq('TEST002' + self.id_postfix)
+        )
+
+        # Log entry item to the original name item
+        self.assertEqual(len(id_items["Items"]), 1)
+
+        # Check the log entry item
+        for item in id_items["Items"]:
+            self.assertEqual(item["data"], "NOTFOUND: Name Not Found for ID TEST002" + self.id_postfix)
+            self.assertEqual(item["SK"][0:11], "DT#" + datetime.now().strftime("%Y%m%d"))
+        
+
+    
