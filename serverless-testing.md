@@ -29,7 +29,7 @@ The couple of components / services of serverless works together.
 # Testing AWS Lambda locally:
 
 https://github.com/aws-samples/serverless-test-samples/tree/main/python-test-samples
-## Example Unit test
+## Example Testing for API Gateway and Lambda
 Refer to: https://aws.amazon.com/blogs/devops/unit-testing-aws-lambda-with-python-and-mock-aws-services/
 Example with API Gateway, Lambda, S3 and Dynamodb: 
 ![Example-Lambda-Testing](./aws/example-projects/test-lambda-python/example-lambda-python.png)
@@ -39,9 +39,18 @@ Example with API Gateway, Lambda, S3 and Dynamodb:
 3. Dynamodb: An Amazon DynamoDB table stores the contents of the documents and the users name, which are retrieved by the Lambda function.
 4. S3: The resulting text document is stored to Amazon S3.
 
-## Example Integration test
+## Example Unit test
+- Isolate and Unit components
+
+## Example Integration test:
+- Integration test run locally against Real AWS Services. 
 
 ## Example E2E test
+In E2E Testing, we should care about: 
+- Authentication, Role, and Permission of each service.
+  - AWS API Gateway - auth: (Cognito, IAM, API Key, ...)
+  - AWS Lambda - auth: (Cognito, IAM, API Key, Lambda Authorizser)
+
 
 # Testing Asynchronous Architectures:
 We can refer to here: https://github.com/aws-samples/serverless-test-samples/blob/main/python-test-samples/README-ASYNC.md#create-test-harnesses
