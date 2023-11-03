@@ -14,7 +14,7 @@ import moto
 
 
 # Import the handler under test
-from sample-lambda import app
+from sample_lambda import app
 
 # Mock the DynamoDB Service during the test
 @moto.mock_dynamodb
