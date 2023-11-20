@@ -23,16 +23,33 @@ In testing, we should have the view of Distributed services architecture.
 The couple of components / services of serverless works together.
 
 # Tools for Serverless Testing:
-- Integration Test with Moto: https://github.com/getmoto/moto
-- AWS SAM: https://aws.amazon.com/serverless/sam/
+- Integration Test with `Moto`: https://github.com/getmoto/moto
+- `AWS SAM`: https://aws.amazon.com/serverless/sam/
+- `Local Stack`: https://docs.localstack.cloud/academy/
 
 # Testing AWS Lambda locally:
 
 https://github.com/aws-samples/serverless-test-samples/tree/main/python-test-samples
+## AWS local Testing - Local Stack:
+Installation: https://docs.localstack.cloud/getting-started/installation/
+- Already installed Docker.
+- Start Docker Local Stack: 
+```docker run \
+  --rm -it \
+  -p 4566:4566 \
+  -p 4510-4559:4510-4559 \
+  localstack/localstack
+```
+- Install Local Stack Cli:
+```
+brew install localstack/tap/localstack-cli
+```
+
 ## Example Testing for API Gateway and Lambda
 Refer to: https://aws.amazon.com/blogs/devops/unit-testing-aws-lambda-with-python-and-mock-aws-services/
 Example with API Gateway, Lambda, S3 and Dynamodb: 
 ![Example-Lambda-Testing](./aws/example-projects/test-lambda-python/example-lambda-python.png)
+
 ### Functionality of each service:
 1. API Gateway: provides an endpoint to request the generation of a document for a given customer.  A document type and customer identifier are provided in this API call.
 2. Lambda: The endpoint invokes an AWS Lambda function that generates a document using the customer identifier and the document type provided.
@@ -49,7 +66,7 @@ Example with API Gateway, Lambda, S3 and Dynamodb:
 In E2E Testing, we should care about: 
 - Authentication, Role, and Permission of each service.
   - AWS API Gateway - auth: (Cognito, IAM, API Key, ...)
-  - AWS Lambda - auth: (Cognito, IAM, API Key, Lambda Authorizser)
+  - AWS Lambda - auth: (Cognito, IAM, API Key, Lambda Authorizer)
 
 
 # Testing Asynchronous Architectures:
