@@ -23,8 +23,9 @@ In testing, we should have the view of Distributed services architecture.
 The couple of components / services of serverless works together.
 
 # Tools for Serverless Testing:
-- Integration Test with Moto: https://github.com/getmoto/moto
-- AWS SAM: https://aws.amazon.com/serverless/sam/
+- Integration Test with `Moto`: https://github.com/getmoto/moto
+- `AWS SAM`: https://aws.amazon.com/serverless/sam/
+- `Local Stack`: https://docs.localstack.cloud/academy/
 
 # Testing AWS Lambda locally:
 
