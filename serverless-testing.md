@@ -34,7 +34,8 @@ https://github.com/aws-samples/serverless-test-samples/tree/main/python-test-sam
 Installation: https://docs.localstack.cloud/getting-started/installation/
 - Already installed Docker.
 - Start Docker Local Stack: 
-```docker run \
+```
+docker run \
   --rm -it \
   -p 4566:4566 \
   -p 4510-4559:4510-4559 \
@@ -43,6 +44,10 @@ Installation: https://docs.localstack.cloud/getting-started/installation/
 - Install Local Stack Cli:
 ```
 brew install localstack/tap/localstack-cli
+```
+- Install awscli-local:
+```
+brew install awscli-local
 ```
 
 ## Example Testing for API Gateway and Lambda
