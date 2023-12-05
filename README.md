@@ -114,6 +114,10 @@ In order to run e2e testing, we have to seed the testing data and make sure our 
 ## Testing Asynchronous Architectures:
 We can refer to here: https://github.com/aws-samples/serverless-test-samples/blob/main/python-test-samples/README-ASYNC.md#create-test-harnesses
 
+## Feature Toggle
+- Feature Flag: https://firebase.google.com/products/remote-config
+- Feature with Launchdarkly: https://launchdarkly.com/
+
 
 # References for Microservices:
 - Microservice Pattern Book: https://manning.com/books/microservices-patterns
