@@ -53,7 +53,7 @@ brew install awscli-local
 ## Example Testing for API Gateway and Lambda
 Refer to: https://aws.amazon.com/blogs/devops/unit-testing-aws-lambda-with-python-and-mock-aws-services/
 Example with API Gateway, Lambda, S3 and Dynamodb: 
-![Example-Lambda-Testing](./aws/example-projects/test-lambda-python/example-lambda-python.png)
+![Example-Lambda-Testing](./aws/example-projects/test-example-lambda-python/example-lambda-python.png)
 
 ### Functionality of each service:
 1. API Gateway: provides an endpoint to request the generation of a document for a given customer.  A document type and customer identifier are provided in this API call.
