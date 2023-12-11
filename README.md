@@ -115,6 +115,9 @@ In order to run e2e testing, we have to seed the testing data and make sure our 
 We can refer to here: https://github.com/aws-samples/serverless-test-samples/blob/main/python-test-samples/README-ASYNC.md#create-test-harnesses
 
 ## Feature Toggle
+What is the Feature Toggle (aka Feature Flag) and Why we use Feature Toggle.
+https://martinfowler.com/articles/feature-toggles.html
+
 - Feature Flag: https://firebase.google.com/products/remote-config
 - Feature with Launchdarkly: https://launchdarkly.com/
 
