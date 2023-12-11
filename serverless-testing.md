@@ -92,3 +92,4 @@ We can refer to here: https://github.com/aws-samples/serverless-test-samples/blo
 - Slide: Solving-Testing-Challenges-For-Serverless-On-AWS:https://pages.awscloud.com/rs/112-TZM-766/images/APMWQ3D4S4%20Solving%20testing%20challenges%20for%20serverless%20on%20AWS.pdf
 - [Solving-Testing-Challenges-For-Serverless-On-AWS](https://lifesciences-resources.awscloud.com/vidyard-all-players/apmwq3d4s4-solving-testing-challenges-for-serverless-on-aws-2)
 - Serverless Test in Principle:https://github.com/aws-samples/serverless-test-samples/blob/main/Serverless-Testing-Principles.md
+- AWS S3, Lambda, SQS, DynamoDd: https://www.kodyaz.com/aws/dynamodb-streams-send-sns-notification-from-aws-lambda-function-using-python.aspx
