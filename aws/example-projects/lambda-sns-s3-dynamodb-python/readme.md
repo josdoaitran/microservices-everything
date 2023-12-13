@@ -13,7 +13,7 @@ An error occurred when creating the trigger: Cannot access stream arn:aws:dynamo
 - We need to modify permission on IAM role, to be able to trigger Lambda from Dynamobd. By Creating inline policy for Dynamobd service these permissions: GetRecords, GetShardIterator, DescribeStream, and ListStreams actions among "Read" actions
 
 - Create SNS notifications `users-change-sns` and creating a subscription with protocol `email` and endpoint `your email`
-- Create S3 bucket: `users-bucket`
+- Create S3 bucket: `users-bucket` with `ACLs enabled`
 
 - Enable S3 on permission of lambda: Create an additional inline policy and allow creation of new files in our target Amazon S3 bucket as follows: Select S3 as service & Mark `PutObject` among Write actions.
 - For the missing Amazon SNS permission, we require to provide `SNS:Publish` permission to our AWS Lambda execution role.
