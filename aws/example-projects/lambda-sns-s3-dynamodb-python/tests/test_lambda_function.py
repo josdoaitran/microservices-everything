@@ -2,7 +2,7 @@ import unittest
 from src import lambda_function
 from moto import mock_s3, mock_sns
 
-class MyTestCase(unittest.TestCase):
+class UnitTestCase(unittest.TestCase):
     @mock_s3
     @mock_sns
     def test_something(self):
