@@ -1,6 +1,7 @@
 # Diagram
 
 ![](./amazon-dynamodb-streams-trigger-aws-lambda-function-with-s3-and-sns.png)
+
 # Note
 - Dynamodb with enabled DynamoDB Stream. `users_table`
 - Capture item level changes on an Amazon DynamoDB table and process them using an AWS Lambda function via a trigger.
@@ -19,6 +20,14 @@ An error occurred when creating the trigger: Cannot access stream arn:aws:dynamo
 - For the missing Amazon SNS permission, we require to provide `SNS:Publish` permission to our AWS Lambda execution role.
 
 # Testing this Lab:
+## Setup local
+- Python local virtual environment: 
+```
+python3 -m venv env
+source env/bin/activate
+```
+- Install requirements: `pip3 install -r reuqirements.txt`
+
 ## E2E testing: 
 We remote via AWS Console to access to Dynamodb to insert a new Index on `users_table`. In happy case, we expect that:
 - Receive the message on Mailbox that we activated in subscription steps.
